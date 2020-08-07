@@ -20,18 +20,24 @@
 
     <h1>Homepage: The &lt;h1&gt; tag is used for page titles</h1>
 
+    <!--use of accesskey is not recommended for normal sites-->
+    <a href='#input' accesskey='S'>Jump to Input (<strong><u>Alt+Shift+S</u></strong>)</a><br>
+    <a href='#accessibility'>Jump to Accessibility</a>
+
     <p>The &lt;p&gt; tag is used for paragraph elements</p>
 
     <h2>&lt;h2&gt; and beyond are used for subheadings, sub-subheadings, etc.</h2>
 
     <p>&lt;ul&gt; and &lt;ol&gt; tags are used to make unordered and ordered lists, respectively</p>
-    <ul>Unordered:
+    <p>Unordered:</p>
+    <ul>
       <li>This is</li>
       <li>an unordered</li>
       <li>list</li>
     </ul>
 
-    <ol>Ordered:
+    <p>Ordered:</p>
+    <ol>
       <li>This is</li>
       <li>an ordered</li>
       <li>list</li>
@@ -42,7 +48,8 @@
     <p>Look! A <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">hyperlink</a> to the MDN tutorial on creating hyperlinks.</p>
     <p>Hyperlinks can also be directed to other site pages: <a href='About.html'>About me!</a></p>
 
-    <dl>This is a description list:
+    <p>This is a description list:</p>
+    <dl>
       <dt>This is the description term</dt>
         <dd>This is the description definition</dd>
         <dd>You can have multiple &lt;dd&gt; tags</dd>
@@ -86,7 +93,34 @@
         <li>&lt;samp&gt; for computer output</li>
       </ul>
 
+    <p>The &lt;time&gt; tag with the 'datetime' attribute allows screenreaders to know the exact date, regardless of how the date is written</p>
     <time datetime='2020-08-06'>Today is August 6, 2020</time>
+
+    <h2 id='input'>Input</h2>
+
+    <p>Wrap input fields with the &lt;form&gt; tag.</p>
+    <p>Use &lt;fieldset&gt; (with &lt;legend&gt;) around radio buttons for better accessibilty. Input tags have a type and name attribute. Related buttons should share the same name attribute. &lt;label&gt; tags must have a 'for' attribute that matches an input's 'id' attribute.</p>
+    <form>
+        <fieldset>
+            <legend>What level web developer are you?</legend>
+            <input id='newbie' type='radio' name='levels' value='newbie'>
+            <label for='newbie'>Newbie</label><br>
+            <input id='intermediate' type='radio' name='levels' value='intermediate'>
+            <label for='intermediate'>Intermediate/Proficient</label><br>
+            <input id='advanced' type='radio' name='levels' value='advanced'>
+            <label for='advanced'>Professional</label><br>
+        </fieldset>
+    </form>
+
+    <form>
+        <p>Here is a date picker:</p>
+        <label for='date-input'>Enter a date:</label>
+        <input type='date' id='date-input' name='date-input'>
+    </form>
+
+    <h2 id='accessibility'>Accessibility</h2>
+    <p tabindex='0'>This text is tabindexed.</p>
+    <p tabindex='1'>This text is tabindexed for '1' and gets keyboard focus first</p>
   </body>
 
 </html>
