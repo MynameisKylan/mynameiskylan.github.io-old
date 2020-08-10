@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right ,#6b8f94, #94706B);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+}
+
+p, li {
+  margin: 0 auto;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 90vmin;
+  margin: 0 auto;
+}
+
+.change-color:hover {
+  color: #B2524D;
+}
