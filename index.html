@@ -6,13 +6,13 @@
     <title>Notes on HTML/CSS/Javascript</title>
     <meta name='description' content='This site contains notes on syntax and usage of some basic HTML/CSS/Javascript'>
     <meta name='author' content='Kylan Wong'>
-    <link rel='stylesheet' href='style\styles.css'>
+    <link rel='stylesheet' href='style.css'>
     <script src='scripts\scripts.js' defer></script>
   </head>
 
   <body>
     <nav>
-      <ul>
+      <ul class='navbar'>
         <li><a href='About.html'>About me</a></li>
         <li><a href='pictures.html'>Pictures</a></li>
         <li><a href='css.html'>CSS Notes</a></li>
@@ -22,8 +22,10 @@
     <h1>Homepage: The &lt;h1&gt; tag is used for page titles</h1>
 
     <!--use of accesskey is not recommended for normal sites-->
-    <a href='#input' accesskey='S'>Jump to Input (<strong><u>Alt+Shift+S</u></strong>)</a><br>
-    <a href='#accessibility'>Jump to Accessibility</a>
+    <div class='jump-to'>
+      <a href='#input' accesskey='S'>Jump to Input (<strong><u>Alt+Shift+S</u></strong>)</a>
+      <a href='#accessibility'>Jump to Accessibility</a>
+      </div>
 
     <p>The &lt;p&gt; tag is used for paragraph elements</p>
 

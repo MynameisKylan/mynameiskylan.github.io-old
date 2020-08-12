@@ -26,10 +26,22 @@ p, li {
 }
 
 body {
-  width: 90vmin;
+  width: 65vmax;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .change-color:hover {
   color: #B2524D;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.jump-to {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
